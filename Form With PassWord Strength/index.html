@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css.">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="jQuery.passwordStrength-master (1)/jQuery.passwordStrength-master/jquery.passwordstrength.js"></script>
+    <title>PassWord Strength</title>
+</head>
+
+<body>
+
+    <form>
+        <img src="user.png">
+        <div class="input-box">
+            <span><i class="fa-regular fa-user"></i></span> <input type="text" placeholder="User Name" required>
+        </div>
+        <div class="input-box">
+            <span><i class="fa-regular fa-envelope"></i></span> <input type="email" placeholder="Email Id" required>
+        </div>
+        <div class="input-box">
+            <span><i class="fa fa-key"></i></span> <input type="Password" id="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit"><i class="fa fa-sign-in"></i> Register</button>
+    </form>
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $("#password").passwordStrength();
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/d2c328cd31.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
